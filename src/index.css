@@ -1,0 +1,171 @@
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+#root{
+  min-height: 100vh;
+  display: flex;
+  background-color: black;
+  color: white;
+}
+/* .my-btn{
+  background-color:white;
+}
+.my-nav{
+  border-radius: 0.35rem;
+  margin: 2rem;
+  padding:1rem;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.273);
+}
+.my-nav-head{
+  margin-top: 0.5rem;
+}
+#collapse-content{
+  position: relative;
+}
+.nav-link{
+  color:black;
+}
+.nav-link:hover{
+  box-shadow: 0 0 4px rgb(0, 0, 0);
+  color:rgba(0, 0, 0, 0.299);
+  transition: 0.3s;
+  border-radius: 0.35rem;
+}
+.dropdown-menu{
+  padding:1rem;
+  text-align: center;
+  z-index: 1000;
+}
+.my-dd-item{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.my-dd-item:hover{
+  color: rgba(0, 0, 0, 0.623);
+} */
+.img-container{
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  object-fit: cover ;
+}
+.background-img{
+  width:100%;
+  height:100%;
+  position:absolute;
+  object-fit: cover ;
+}
+footer{
+  
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+footer h2{
+  font-size: 1.4rem;
+}
+footer h1{
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+footer div{
+  display: flex;
+  flex-direction: column;
+}
+i {
+  color: white;
+  font-size: 1 rem;
+  transition: 0.3s;
+}
+footer button :hover{
+  opacity: 0.6;
+}
+.bgGradient{
+  position: absolute;
+  inset:0;
+  z-index: -1;
+  background: linear-gradient(to top, #030615, rgba(255, 255, 255, 0))
+}
+
+.sidebar{
+  position: fixed;
+  inset:0;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  border-radius: 0.5rem;
+  
+}
+.bgOverlay{
+  position: absolute;
+  inset:0;
+  background:#030615;
+  opacity:0.6;
+  
+}
+.sidebarContents{
+  display:flex;
+  flex-direction: column;
+  z-index: 15;
+  position:relative;
+  height: 100%;
+  background:#030615;
+  width:80%;
+  padding:1rem;
+  gap:1rem;
+  margin-left:auto;
+}
+.sidebarContents h2{
+  font: 1.1rem;
+  font-weight:100;
+}
+.sidebarContents div{
+  flex: 1;
+}
+.sidebarContents button{
+  margin-right: auto;
+}
+@media (min-width: 640px){
+  .sidebar{
+    position: relative;
+    inset:unset;
+    width:40%;
+    right:0;
+    box-shadow:  0 0 4px white;  
+  }
+  .sidebarContents{
+    margin:unset;
+    width:fit-content;
+  }
+}
+.loadingstate{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex: 1;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin{
+  from{
+    transform:rotate(0deg)
+  }
+  to{
+    transform:rotate(360deg)
+  }
+}
+.loadingstate i{
+  font-size: 4rem;
+  opacity: 0.2;
+}
+.description{
+  font-size: 1.1rem;
+  font-weight: 100;
+}
